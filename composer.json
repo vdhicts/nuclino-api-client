@@ -1,0 +1,50 @@
+{
+    "name": "vdhicts/nuclino-api-client",
+    "description": "A client for the API of Nuclino",
+    "keywords": [
+        "nuclino",
+        "api",
+        "client"
+    ],
+    "homepage": "https://github.com/vdhicts/nuclino-api-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dick van der Heiden",
+            "email": "info@vdhicts.nl",
+            "homepage": "https://www.vdhicts.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^7.0",
+        "illuminate/http": "^8.74",
+        "illuminate/support": "^8.22"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.2",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vdhicts\\Nuclino\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vdhicts\\Nuclino\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit --no-coverage",
+        "test-coverage": "vendor/bin/phpunit",
+        "analyse": "vendor/bin/phpstan"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
