@@ -4,7 +4,7 @@ Easy to use client for the API of [Nuclino](https://www.nuclino.com/).
 
 ## Requirements
 
-This package requires at least PHP 7.4.
+This package requires at least PHP 8.1.
 
 ## Installation
 

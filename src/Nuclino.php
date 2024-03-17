@@ -11,14 +11,17 @@ use Vdhicts\Nuclino\Endpoints\WorkspaceEndpoint;
 
 class Nuclino extends Factory
 {
+    use FileEndpoint;
+    use ItemEndpoint;
     use TeamEndpoint;
     use WorkspaceEndpoint;
-    use ItemEndpoint;
-    use FileEndpoint;
 
     private const TIMEOUT = 180;
-    private const VERSION = '1.0.0';
-    private const USER_AGENT = 'vdhicts-nuclino-api-client/' . self::VERSION;
+
+    private const VERSION = '3.0.0';
+
+    private const USER_AGENT = 'vdhicts-nuclino-api-client/'.self::VERSION;
+
     private const BASE_URL = 'https://api.nuclino.com/';
 
     protected string $apiKey;
