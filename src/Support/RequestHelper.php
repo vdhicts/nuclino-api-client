@@ -13,6 +13,6 @@ class RequestHelper
             return $url;
         }
 
-        return $url . '?' . $query;
+        return $url.'?'.$query;
     }
 }

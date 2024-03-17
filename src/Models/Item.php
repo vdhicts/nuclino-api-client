@@ -8,10 +8,15 @@ use Vdhicts\Nuclino\Enum\ItemObject;
 class Item implements Arrayable
 {
     private ?string $workspaceId = null;
+
     private ?string $parentId = null;
+
     private string $object = ItemObject::ITEM;
+
     private string $title = '';
+
     private string $content = '';
+
     private ?int $index = null;
 
     public function getWorkspaceId(): ?string

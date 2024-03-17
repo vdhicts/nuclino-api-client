@@ -7,7 +7,7 @@ use Vdhicts\Nuclino\Support\RequestHelper;
 
 trait TeamEndpoint
 {
-    public function listTeams(int $limit = 100, string $after = null): Response
+    public function listTeams(int $limit = 100, ?string $after = null): Response
     {
         if ($limit > 100) {
             $limit = 100;

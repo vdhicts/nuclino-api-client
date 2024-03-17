@@ -9,10 +9,10 @@ use Vdhicts\Nuclino\Support\RequestHelper;
 trait ItemEndpoint
 {
     public function listItems(
-        string $teamId = null,
-        string $workspaceId = null,
+        ?string $teamId = null,
+        ?string $workspaceId = null,
         int $limit = 100,
-        string $after = null
+        ?string $after = null
     ): Response {
         if ($limit > 100) {
             $limit = 100;
@@ -30,8 +30,8 @@ trait ItemEndpoint
 
     public function searchItems(
         string $search,
-        string $teamId = null,
-        string $workspaceId = null,
+        ?string $teamId = null,
+        ?string $workspaceId = null,
         int $limit = 100
     ): Response {
         if ($limit > 100) {
