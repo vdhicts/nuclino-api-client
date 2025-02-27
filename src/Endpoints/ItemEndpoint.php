@@ -12,7 +12,7 @@ trait ItemEndpoint
         ?string $teamId = null,
         ?string $workspaceId = null,
         int $limit = 100,
-        ?string $after = null
+        ?string $after = null,
     ): Response {
         if ($limit > 100) {
             $limit = 100;
@@ -24,7 +24,7 @@ trait ItemEndpoint
                 'workspaceId' => $workspaceId,
                 'limit' => $limit,
                 'after' => $after,
-            ])
+            ]),
         );
     }
 
@@ -32,7 +32,7 @@ trait ItemEndpoint
         string $search,
         ?string $teamId = null,
         ?string $workspaceId = null,
-        int $limit = 100
+        int $limit = 100,
     ): Response {
         if ($limit > 100) {
             $limit = 100;
@@ -44,7 +44,7 @@ trait ItemEndpoint
                 'workspaceId' => $workspaceId,
                 'limit' => $limit,
                 'search' => $search,
-            ])
+            ]),
         );
     }
 
