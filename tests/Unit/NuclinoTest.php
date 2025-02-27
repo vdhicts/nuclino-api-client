@@ -23,7 +23,7 @@ class NuclinoTest extends TestCase
             return
                 $request->hasHeader('Authorization', $apiKey) &&
                 $request->hasHeader('Accept', 'application/json') &&
-                $request->url() == 'https://api.nuclino.com/v0/items/'.$id;
+                $request->url() == 'https://api.nuclino.com/v0/items/' . $id;
         });
     }
 }

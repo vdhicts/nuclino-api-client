@@ -20,7 +20,7 @@ class Nuclino extends Factory
 
     private const VERSION = '3.0.0';
 
-    private const USER_AGENT = 'vdhicts-nuclino-api-client/'.self::VERSION;
+    private const USER_AGENT = 'vdhicts-nuclino-api-client/' . self::VERSION;
 
     private const BASE_URL = 'https://api.nuclino.com/';
 
